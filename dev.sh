@@ -21,7 +21,7 @@ done
 
 if [[ $devc == 1 ]];then
 	rm -rf /usr/local/bin/ssr
-	cd /usr/local/SSR-Bash-Python/
+	cd /usr/local/Easy-SSR-Bash/
 	git pull
 	wget -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/Moexin/Easy-SSR-Bash/master/ssr
 	chmod +x /usr/local/bin/ssr

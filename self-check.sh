@@ -2,7 +2,7 @@
 #Check Root
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script"; exit 1; }
 echo "##################################
-      SSR-Bash-Python 自检系统
+      Easy-SSR-Bash 自检系统
              V1.0 Alpha
            Author:Kirito
 ##################################"
@@ -10,9 +10,9 @@ echo "##################################
 echo "############Filelist of /usr/local" >> /root/report.json
 cd /usr/local
 ls >> /root/report.json
-#List /usr/local/ssr-bash-python
-echo "############Filelist of /usr/local/SSR-Bash-Python" >> /root/report.json
-cd /usr/local/SSR-Bash-Python
+#List /usr/local/Easy-SSR-Bash
+echo "############Filelist of /usr/local/Easy-SSR-Bash" >> /root/report.json
+cd /usr/local/Easy-SSR-Bash
 ls >> /root/report.json
 #List /usr/local/shadowsockr
 echo "############Filelist of /usr/local/shadowsockr" >> /root/report.json
@@ -21,12 +21,12 @@ ls >> /root/report.json
 echo "############File test">>/root/report.json
 #Check File Exist
 if [ ! -f "/usr/local/bin/ssr" ]; then
-  echo "SSR-Bash-Python主文件缺失，请确认服务器是否成功连接至Github"
+  echo "Easy-SSR-Bash主文件缺失，请确认服务器是否成功连接至Github"
   echo "SSR Miss" >> /root/report.json
   exit
 fi
-if [ ! -f "/usr/local/SSR-Bash-Python/server.sh" ]; then
-  echo "SSR-Bash-Python主文件缺失，请确认服务器是否成功连接至Github"
+if [ ! -f "/usr/local/Easy-SSR-Bash/server.sh" ]; then
+  echo "Easy-SSR-Bash主文件缺失，请确认服务器是否成功连接至Github"
   echo "SSR Miss" >> /root/report.json
   exit
 fi
