@@ -6,7 +6,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 echo "欢迎使用 Easy-SSR-Bash Author:Moexin"
 
-echo '更多一键脚本尽在Moexin&#39;s Blog'
+echo '欢迎来访：Moexin`s Blog'
 echo 'http://blog.lmeoo.com/'
 
 echo 'For legal reason, this packet will not receive update'
